@@ -6,7 +6,6 @@ Following is the README file that accompanied the Requiem source code.
 
 
 /************************************************************************
- *									*
  *         Copyright (c) 1989 Mike Papazoglou and Willi Valder	        *
  *                      All rights reserved				*
  *									*
