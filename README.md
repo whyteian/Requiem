@@ -5,40 +5,36 @@ Following is the README file that accompanied the Requiem source code.
 
 
 
-/************************************************************************
- *         Copyright (c) 1989 Mike Papazoglou and Willi Valder	        *
- *                      All rights reserved				*
- *									*
- *									*
- *    Permission to copy this program or any part of this program is	*
- *    granted in case of personal, non-commercial use only. Any use	*
- *    for profit or other commercial gain without written permissions	*
- *    of the authors is prohibited. 					*
- *									*
- *    You may freely distribute this program to friends, colleagues,	*
- *    etc.  As a courtesy we would appreciate it if you left our names	*
- *    on the code as the authors,                                       *
- *    (see the licensing agreement for further details).		*
- *    We also, of course, disavow any liabilities 			*
- *    for any bizarre things you may choose to do with the system.	*
- *									*
- *    We would appreciate though your letting us know about any 	*
- *    extensions, modifications, project suggestions, etc.		*
- *    Please mail all bugs, comments, complaints and suggestions to:	*
- *    									*
- *									*
- *    Mike P. Papazoglou						*
- *    ANU (Australian National University)	                        *
- *    Dept. of Computer Science,         				*
- *    G.P.O. Box 4							*
- *    Canberra, ACT 2601,						*
- *    Australia                          				*
- *									*
- *    email:    mike@anucsd.anu.edu.au           			*
- *    tel:      +61-6-2494725                            		*
- *    fax:      +61-6-2490010                            		*
- *									*
- ************************************************************************/
+
+         Copyright (c) 1989 Mike Papazoglou and Willi Valder
+                      All rights reserved
+
+Permission to copy this program or any part of this program is
+granted in case of personal, non-commercial use only. Any use
+for profit or other commercial gain without written permissions
+of the authors is prohibited.
+
+You may freely distribute this program to friends, colleagues,
+on the code as the authors, 
+(see the licensing agreement for further details).
+
+We also, of course, disavow any liabilities
+for any bizarre things you may choose to do with the system.
+
+We would appreciate though your letting us know about any
+extensions, modifications, project suggestions, etc.
+Please mail all bugs, comments, complaints and suggestions to:
+
+Mike P. Papazoglou
+ANU (Australian National University)	
+Dept. of Computer Science, 
+G.P.O. Box 4
+Canberra, ACT 2601,	
+Australia 
+
+email:    mike@anucsd.anu.edu.au
+tel:      +61-6-2494725 
+fax:      +61-6-2490010
 
 
 This distribution of the REQUIEM database prototype comes with a
