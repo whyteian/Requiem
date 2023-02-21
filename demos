@@ -1,0 +1,24 @@
+select from product where finish = "oak";
+print;
+select from product where finish = "oak" & weight > 50;
+print;
+select from supplier where supname == "jo";
+print;
+project product over prodno, weight;
+print;
+project product over prodno, weight;
+print;
+project (select from product where finish = "oak" & weight > 50) 
+over prodno, weight;
+print;
+join supplier on supid with supply on sid;
+print;
+join supplier on supid with supply on sid 
+where supply.quantity = 1234;
+print;
+expose supplier over supname, location when supid is in project supply over sid where quantity > 100;
+print;
+assign temp to join supplier on supid with supply on sid where supply.quantity > 100;
+print temp;
+select from temp where location = "stockholm";
+print;

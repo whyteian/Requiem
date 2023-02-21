@@ -1,0 +1,10 @@
+create invoice 	(invoiceno (char (6), UNIQUE),
+		name (char (20)),
+		termofpay (char (15)),
+		amount (num (10)));
+
+create customer (custid (char (6), UNIQUE),
+		name (char (20)),
+		street (char (20)),
+		location (char (20)));
+

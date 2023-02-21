@@ -1,0 +1,20 @@
+create systab (relname  (char(12), UNIQUE),
+	     creator (char(20), SECONDARY),
+             perms (num(5)),
+             deriv (char(5)),
+             natrs  (num(8)));
+
+create sysatrs (atrname (char(20), UNIQUE),
+	     relname  (char(12), SECONDARY),
+             type (char(5)),
+             length (num(6)),
+             index  (char(7)));
+
+create sysview (viewname  (char(12), UNIQUE),
+             base (char(12)),
+             text  (char(132)));
+
+create syskey (fgnkey  (char(12), UNIQUE),
+             relname (char(12)),
+             qualifier  (char(12)),
+             primary  (char(12)));

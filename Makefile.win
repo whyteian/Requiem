@@ -1,0 +1,88 @@
+# Project: Requiem
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = requ.o access.o btree.o cat.o create.o err.o hash.o iex.o impl.o io.o io_lib.o lexan.o misc.o parser.o pgm_int.o quedcmp.o reminder.o tabl.o view.o xcom.o xinterp.o
+LINKOBJ  = requ.o access.o btree.o cat.o create.o err.o hash.o iex.o impl.o io.o io_lib.o lexan.o misc.o parser.o pgm_int.o quedcmp.o reminder.o tabl.o view.o xcom.o xinterp.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++"
+BIN      = Requiem.exe
+CXXFLAGS = $(CXXINCS) -std=gnu90
+CFLAGS   = $(INCS) -std=gnu90
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+requ.o: requ.c
+	$(CC) -c requ.c -o requ.o $(CFLAGS)
+
+access.o: access.c
+	$(CC) -c access.c -o access.o $(CFLAGS)
+
+btree.o: btree.c
+	$(CC) -c btree.c -o btree.o $(CFLAGS)
+
+cat.o: cat.c
+	$(CC) -c cat.c -o cat.o $(CFLAGS)
+
+create.o: create.c
+	$(CC) -c create.c -o create.o $(CFLAGS)
+
+err.o: err.c
+	$(CC) -c err.c -o err.o $(CFLAGS)
+
+hash.o: hash.c
+	$(CC) -c hash.c -o hash.o $(CFLAGS)
+
+iex.o: iex.c
+	$(CC) -c iex.c -o iex.o $(CFLAGS)
+
+impl.o: impl.c
+	$(CC) -c impl.c -o impl.o $(CFLAGS)
+
+io.o: io.c
+	$(CC) -c io.c -o io.o $(CFLAGS)
+
+io_lib.o: io_lib.c
+	$(CC) -c io_lib.c -o io_lib.o $(CFLAGS)
+
+lexan.o: lexan.c
+	$(CC) -c lexan.c -o lexan.o $(CFLAGS)
+
+misc.o: misc.c
+	$(CC) -c misc.c -o misc.o $(CFLAGS)
+
+parser.o: parser.c
+	$(CC) -c parser.c -o parser.o $(CFLAGS)
+
+pgm_int.o: pgm_int.c
+	$(CC) -c pgm_int.c -o pgm_int.o $(CFLAGS)
+
+quedcmp.o: quedcmp.c
+	$(CC) -c quedcmp.c -o quedcmp.o $(CFLAGS)
+
+reminder.o: reminder.c
+	$(CC) -c reminder.c -o reminder.o $(CFLAGS)
+
+tabl.o: tabl.c
+	$(CC) -c tabl.c -o tabl.o $(CFLAGS)
+
+view.o: view.c
+	$(CC) -c view.c -o view.o $(CFLAGS)
+
+xcom.o: xcom.c
+	$(CC) -c xcom.c -o xcom.o $(CFLAGS)
+
+xinterp.o: xinterp.c
+	$(CC) -c xinterp.c -o xinterp.o $(CFLAGS)

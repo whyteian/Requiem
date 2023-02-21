@@ -1,0 +1,3 @@
+import supplier into supplier;
+import product into product;
+import supply into supply;

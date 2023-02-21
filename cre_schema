@@ -1,0 +1,14 @@
+create supplier (supid  (num(5), UNIQUE),
+             supname (char(20), SECONDARY),
+             location (char(20)));
+             
+create product (prodno  (num(5), UNIQUE),
+             prodname (char(20), SECONDARY),
+             weight (real(10)),
+             finish (char(15)));
+
+create supply (sid  (num(5)),
+             prno  (num(5)),
+             quantity (num(10)), 
+             foreign key sid references supid in supplier;
+             foreign key prno references prodno in product;);
